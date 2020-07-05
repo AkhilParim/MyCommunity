@@ -1,0 +1,361 @@
+.navbar {
+  font-size: 1.1rem;
+  padding: 5px 0 4.5rem;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #36b7be;
+}
+
+.nav-item {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 8px;
+}
+
+.navbar img {
+  width: 70px;
+}
+
+.navbar-brand {
+  padding: 9px 0 6px 6px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+  background-color: #36b7be;
+  font-size: 1.3rem;
+  padding: 14px 28px;
+  margin: 50px 0 0;
+}
+
+.button:hover {
+  background-color: #158496;
+}
+
+/* cart */
+.cart-btn {
+  background-color: #36b7be; 
+  border: none; 
+  color: white;
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin-left: 340px;
+  
+}
+
+
+.sidenav {
+  height: 100%; 
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: rgb(255, 255, 255); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 18px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.cart-info{
+  color: rgb(7, 7, 6);
+  margin-left: 30px;
+}
+input[type=number]{
+  width: 80px;
+  
+} 
+#quantity{
+  border-radius: 6px;
+  width: 60px;
+  height: 45px;
+  margin-right: 1px;
+  margin-bottom: 0px;
+}
+/*---------- Cart Item -------------------- */
+.cart-head{
+  justify-content: space-between;
+
+}
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+  margin-left:25px;
+}
+.cart-item h3 {
+  font-size: 1.85rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  color: rgb(26, 23, 23);
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: var(--mainSpacing);
+  color: rgb(19, 3, 3);
+}
+.item-amount {
+  text-align: center;
+}
+.remove-item {
+  color: rgb(124, 101, 59);
+  cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+/*---------- End of Cart Item -------------------- */
+
+.cart-footer {
+  margin-top: 22rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  background-color: #36b7be ;
+}
+
+/* --------------- End of Cart ---------------- */
+
+/* section-1 */
+.home-section1{
+  padding-bottom: 5px;
+  padding-top: 71px;
+  padding-right: 323px;
+}
+.section1-container {
+  padding: 3% 12% 9%;
+}
+
+.section1-left {
+  padding: 10rem 0 0;
+}
+
+.section1 p {
+  line-height: 7px;
+  font-size: 20px;
+}
+
+.section1 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.h1-color {
+  color: #39a3be
+}
+
+.h1-bottom {
+  padding: 0 0 20px;
+}
+
+.section1 p {
+  padding-bottom: 0.1rem;
+  color: #6f7a98;
+  font-size: 1.1rem;
+}
+
+
+.section1-right {
+  padding-top: 110px;
+}
+
+/* section-2 */
+
+.chef-img{
+  padding-top: 150px;
+  
+
+}
+.section2-container {
+  padding: 7% 13% 7% 5%;
+  background-color: #f6fbfc;
+  margin: 0 2%;
+}
+
+.section2 h1 {
+  color: #36b7be;
+  font-size: 3.3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  padding: 0 180px;
+}
+
+.section2-right {
+  padding: 10rem 0 0;
+  text-align: right;
+}
+
+.section2 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.section2 .button {
+  margin-right: 75px;
+}
+
+/* section-3 */
+.section3-container {
+  text-align: center;
+  padding: 10%;
+}
+
+.section3 h1 {
+  color: #36b7be;
+  font-size: 3.3rem;
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+.space {
+  padding-left: 6rem;
+}
+
+.hr {
+  margin: 210px 0.5rem;
+  padding: 0;
+  text-align: center;
+}
+
+.img1, .img2 {
+  padding-top: 100px;
+  width: 220px;
+}
+
+.img3 {
+  padding-top: 170px;
+  width: 220px;
+}
+
+.section3 h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.section3 p {
+  color: #6f7a98;
+  font-size: 1rem;
+}
+
+.section3-col {
+  position: relative;
+  padding: 0;
+}
+
+.section3-des {
+  position: absolute;
+  top: 350px;
+}
+
+
+/* section-4 */
+.section4-container {
+  background-color: #f6fbfc;
+  padding: 7% 13% 7% 5%;
+  text-align: center;
+}
+
+.section4-left {
+  padding: 100px 0;
+}
+.section4-left button {
+  margin: 25px 0;
+  padding: 10px 20px;
+}
+
+
+/* footer */
+.footer-container {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  /* background-color: #f6fbfc; */
+  padding: 4% 10% 1%;
+}
+
+.footer-left {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+.footer-left img {
+  width: 80px;
+  padding-bottom: 15px;
+}
+
+.footer-left h6 {
+  line-height: 12px;
+  color: #3c3a3a;
+}
+
+.footer-right {
+  padding: 0;
+}
+
+.footer-right h6 {
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.footer-right a {
+  color: #676666;
+  font-size: 1.1rem;
+}
+
+ul {
+  line-height: 250%;
+}

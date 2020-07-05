@@ -1,0 +1,171 @@
+body {
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #36b7be;
+}
+
+.navigationbar {
+  padding: 3% 12% 2%;
+}
+
+.navbar {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+.nav-item {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 8px;
+}
+
+.navbar img {
+  width: 70px;
+}
+
+.navbar-brand {
+  padding: 9px 0 6px 6px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* section-1 */
+.section1-container {
+  background-color: #f6fbfc;
+  padding: 10% 13%;
+}
+
+.section1 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+/* section-2 */
+.section2 {
+  padding: 7% 10% 3%;
+}
+
+.button1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  padding: 10px 28px;
+  margin: 0 10px;
+  color: #000000;
+  border-color: #e0dede;
+  border-width: 1px;
+}
+
+.button1:hover {
+  background-color: #b3b7b2;
+  border-color: #e0dede;
+  color: #000000;
+}
+
+.active-btn:hover {
+  background-color: #158496;
+  border-color: #36b7be;
+  color: #ffffff;
+}
+
+.active-btn {
+  background-color: #36b7be;
+  border-color: #36b7be;
+  color: #ffffff;
+}
+
+#showHideDiv, #showHideDiv1 {
+  padding: 7% 0%;
+  text-align: left;
+}
+
+.inside img {
+  float: left;
+  width: 110px;
+  margin: 15px 25px 0 0;
+}
+
+.items {
+  padding-bottom: 25px;
+}
+
+.inside {
+  padding: 25px;
+  border: 1px solid #e0dede;
+  border-radius: 7px;
+}
+
+.inside:hover {
+  border-color: #8ec6c5;
+  transition: 100ms;
+}
+
+input[type="number"] {
+  position: relative;
+  padding-left: 12px;
+  top: 2px;
+  height: 46px;
+  width: 60px;
+  border: 1px solid #e0dede;
+  border-radius: 6px;
+}
+
+.button2 {
+  font-size: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  margin-left: 15px;
+  padding: 10px 10px;
+  background-color: #36b7be;
+  color: #ffffff;
+}
+
+ a {
+     text-decoration: none ;
+     color: #000;
+  }
+a:hover {
+    color:#000;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* footer */
+.footer-container {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f6fbfc;
+  padding: 5% 10%;
+}
+
+.footer-left {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+.footer-left img {
+  width: 80px;
+  padding-bottom: 15px;
+}
+
+.footer-left h6 {
+  line-height: 12px;
+  color: #3c3a3a;
+}
+
+.footer-right {
+  padding: 0;
+}
+
+.footer-right h6 {
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.footer-right a {
+  color: #676666;
+  font-size: 1.1rem;
+}
+
+ul {
+  line-height: 250%;
+}

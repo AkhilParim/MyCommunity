@@ -20,49 +20,57 @@
   <!-- JS-->
   <script src="cart.js"></script>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5a08023153.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
 <body>
+
+  <!-- *******************  Cart  ******************* -->
+  <div id="mySidenav" class="sidenav">
+    <div class="cart-head">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <h2 class="cart-info">Your cart</h2>
+    </div>
+
+    <div class="cart-content">
+      <!-- Cart Item -->
+      <div class="cart-item">
+        <img src="./Images/sarees.jpg" alt="saree">
+        <div>
+          <h3>Silk saree</h3>
+          <h5>Rs. 900</h5>
+          <span class="remove-item">Remove</span>
+        </div>
+
+        <div>
+
+          <input type="number" class="quantity" name="quantity" min="1" value="1">
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="cart-footer">
+      <h3>Your Total: Rs. <span class="cart-total">0</span></h3>
+      <button class="btn btn-info btn-lg cart-button">Checkout</button>
+    </div>
+  </div>
+  <!-- *******************  Cart Close  ******************* -->
+
+
+  <!-- *******************  Sections  ******************* -->
   <section class="section1">
     <div class="container-fluid section1-container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <img src="Images/logo.jpg" alt="">
         <a class="navbar-brand" href="#">My Community</a>
-        <!-- cart-->
-        <div id="mySidenav" class="sidenav">
-          <div class="cart-head">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
-          <h2 class="cart-info">Your cart</h2>
-        </div>
-        
-          <div class="cart-content">
-            <!--Cart Item-->
-            <div class="cart-item">
-              <img src="./Images/sarees.jpg" alt="saree">
-            <div>
-            <h3>Silk saree</h3>
-            <h5>Rs.900</h5>
-            <span class="remove-item">remove</span>
-        </div>
-        <div>
-              
-          <input type="number" id="quantity" name="quantity" min="1" value="1">
-                   
-        </div>
-        </div>
-        </div>
-        <div class="cart-footer">
-          <h3>Your Total: Rs <span class="cart-total">0</span></h3>
-          <button class="clear-cart banner-btn">Checkout</button>
-        </div>
-        </div>
-        <!-- Use any element to open the sidenav -->
-        <span onclick="openNav()" class="cart-btn"> <li class="fa fa-shopping-cart" aria-hidden="true"></li></span>
-        <!--cart close-->
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,6 +89,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">My Account</a>
             </li>
+            <li class="nav-item">
+              <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
+            </li>
           </ul>
         </div>
       </nav>
@@ -95,7 +106,7 @@
           <button type="button" class="btn btn-info btn-lg button">Place an Order</button>
         </div>
         <div class="col-md-6 section1-right">
-          <img class="home-section1"src="Images/homesection1.svg" alt="image" width="200%" height="60%" >
+          <img class="home-section1" src="Images/homesection1.svg" alt="image" width="200%" height="60%">
         </div>
       </div>
     </div>
@@ -107,11 +118,10 @@
       <h1>The home of</h1>
       <h1>fresh products</h1>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-8">
           <img class="chef-img" src="Images/chef.PNG" alt="chefs" width="140%">
-
         </div>
-        <div class="col-md-8 section2-right">
+        <div class="col-md-4 section2-right">
           <h2>Dicover the</h2>
           <h2>MasterChefs in</h2>
           <h2>your Community</h2>
@@ -163,30 +173,19 @@
       <div class="row">
         <div class="col-md-6 section4-left">
           <h1>Come Join Us.</h1>
-          <p>Do you want to start any business or join our list of MasterChefs in your community. We are Open!</p>
+          <p>Do you want to start any business or join our </p>
+          <p>list of MasterChefs in your community. We are Open!</p>
+          <p></p>
           <button type="button" class="btn btn-info btn-lg button">Join Us</button>
         </div>
         <div class="col-md-6">
-          <img src="Images/join_us.svg" alt="joinUs" width="120%">
+          <img class="section4-img" src="Images/join_us.svg" alt="joinUs">
 
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="section5">
-    <div class="container-fluid section5-container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="" alt="image">
-        </div>
-        <div class="col-md-6">
-          <h1>Support good food and local business.</h1>
-          <button type="button" class="btn btn-info btn-lg button">Order Now</button>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <footer class="footer">
     <div class="container-fluid footer-container">

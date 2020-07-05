@@ -25,37 +25,38 @@
   background-color: #36b7be;
   font-size: 1.3rem;
   padding: 14px 28px;
-  margin: 50px 0 0;
+  margin: 35px 0 0;
 }
 
 .button:hover {
   background-color: #158496;
 }
 
-/* cart */
+/************* cart *************/
 .cart-btn {
-  background-color: #36b7be; 
-  border: none; 
+  background-color: #36b7be;
   color: white;
-  padding: 12px 16px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  margin-left: 340px;
-  
+  padding: 18px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 6px;
+
 }
 
 
 .sidenav {
-  height: 100%; 
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
   right: 0;
-  background-color: rgb(255, 255, 255); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -69,7 +70,7 @@
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #000;
 }
 
 .sidenav .closebtn {
@@ -78,7 +79,7 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  
+
 }
 
 
@@ -88,21 +89,23 @@
 }
 
 .cart-info{
-  color: rgb(7, 7, 6);
-  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-left: 27px;
 }
-input[type=number]{
-  width: 80px;
-  
-} 
-#quantity{
+
+.quantity {
+  padding-left: 10px;
   border-radius: 6px;
   width: 60px;
   height: 45px;
   margin-right: 1px;
   margin-bottom: 0px;
 }
-/*---------- Cart Item -------------------- */
+.cart-content {
+  padding-right: 20px;
+}
+/* ---------- Cart Item -------------------- */
 .cart-head{
   justify-content: space-between;
 
@@ -134,8 +137,11 @@ input[type=number]{
   text-align: center;
 }
 .remove-item {
-  color: rgb(124, 101, 59);
+  color: rgba(0,0,0,.5);
   cursor: pointer;
+}
+.remove-item:hover {
+  color: rgb(124, 101, 59);
 }
 .fa-chevron-up,
 .fa-chevron-down {
@@ -152,31 +158,30 @@ input[type=number]{
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
-  
+  padding-left: 20px;
 }
-.banner-btn {
-  padding: 1rem 3rem;
-  text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  font-size: 1rem;
-  background: var(--primaryColor);
-  color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  cursor: pointer;
-  background-color: #36b7be ;
+
+.cart-button {
+  background-color: #36b7be;
+  font-size: 1.3rem;
+  padding: 14px 28px;
+  margin: 20px 0 0;
+  /* color: #000; */
+}
+.cart-button:hover {
+  background-color: #158496;
 }
 
 /* --------------- End of Cart ---------------- */
 
 /* section-1 */
 .home-section1{
-  padding-bottom: 5px;
-  padding-top: 71px;
-  padding-right: 323px;
+  width: 830px;
+  position: relative;
+  right: 70px;
 }
 .section1-container {
-  padding: 3% 12% 9%;
+  padding: 3% 12% 5%;
 }
 
 .section1-left {
@@ -215,14 +220,15 @@ input[type=number]{
 }
 
 /* section-2 */
-
 .chef-img{
-  padding-top: 150px;
-  
-
+  position: relative;
+  left: 50px;
+  width: 650px;
+  padding-top: 100px;
 }
+
 .section2-container {
-  padding: 7% 13% 7% 5%;
+  padding: 7% 17% 7% 7%;
   background-color: #f6fbfc;
   margin: 0 2%;
 }
@@ -244,10 +250,6 @@ input[type=number]{
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.5rem;
-}
-
-.section2 .button {
-  margin-right: 75px;
 }
 
 /* section-3 */
@@ -273,8 +275,13 @@ input[type=number]{
   text-align: center;
 }
 
-.img1, .img2 {
+.img1 {
   padding-top: 100px;
+  width: 220px;
+}
+
+.img2 {
+  padding-top: 150px;
   width: 220px;
 }
 
@@ -307,16 +314,34 @@ input[type=number]{
 /* section-4 */
 .section4-container {
   background-color: #f6fbfc;
-  padding: 7% 13% 7% 5%;
+  padding: 7% 13% 7% 10%;
   text-align: center;
 }
 
 .section4-left {
+  text-align: left;
   padding: 100px 0;
 }
 .section4-left button {
   margin: 25px 0;
   padding: 10px 20px;
+}
+
+.section4-img {
+  width: 110%;
+  padding-left: 50px;
+}
+
+.section4 h1 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.section4 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  line-height: 0.7rem;
+  color: #3c3a3a;
 }
 
 

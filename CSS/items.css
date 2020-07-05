@@ -1,10 +1,15 @@
-.navbar {
-  font-size: 1.1rem;
-  padding: 5px 0 4.5rem;
-}
-
+/* NavBar */
 .navbar-light .navbar-nav .active>.nav-link {
   color: #36b7be;
+}
+
+.navigationbar {
+  padding: 3% 12% 2%;
+}
+
+.navbar {
+  padding: 5px 0;
+  font-size: 1.1rem;
 }
 
 .nav-item {
@@ -21,17 +26,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.button {
-  background-color: #36b7be;
-  font-size: 1.3rem;
-  padding: 14px 28px;
-  margin: 35px 0 0;
-}
-
-.button:hover {
-  background-color: #158496;
-}
-
 /************* cart *************/
 .cart-btn {
   background-color: #36b7be;
@@ -43,6 +37,7 @@
 }
 
 .sidenav {
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   height: 100%;
@@ -160,207 +155,75 @@
 }
 
 /*---------- End of Cart Item -------------------- */
-.cart-footer {
-  margin-top: 22rem;
-  letter-spacing: var(--mainSpacing);
-  text-align: center;
-}
-
-.cart-footer h3 {
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-  padding-left: 20px;
-}
-
-.cart-button {
-  background-color: #36b7be;
-  font-size: 1.3rem;
-  padding: 14px 28px;
-  margin: 20px 0 0;
-  /* color: #000; */
-}
-
-.cart-button:hover {
-  background-color: #158496;
-}
-
-/* --------------- End of Cart ---------------- */
-/* section-1 */
-.home-section1 {
-  width: 830px;
-  position: relative;
-  right: 70px;
-}
-
+/* section1 */
 .section1-container {
-  padding: 3% 12% 5%;
+  padding: 4% 0 5%;
+  text-align: center;
+  background-color: #f6fbfc;
 }
 
-.section1-left {
-  padding: 10rem 0 0;
-}
-
-.section1 p {
-  line-height: 7px;
-  font-size: 20px;
+.section1-container img {
+  width: 500px;
+  border-radius: 10px;
 }
 
 .section1 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-}
-
-.h1-color {
-  color: #39a3be
-}
-
-.h1-bottom {
-  padding: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 30px 0 0;
+  margin: 0;
 }
 
 .section1 p {
-  padding-bottom: 0.1rem;
-  color: #6f7a98;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.section1-right {
-  padding-top: 110px;
-}
-
-/* section-2 */
-.chef-img {
+input[type="number"] {
   position: relative;
-  left: 50px;
-  width: 650px;
-  padding-top: 100px;
+  font-size: 1.2rem;
+  padding-left: 12px;
+  top: 3px;
+  height: 55px;
+  width: 60px;
+  border: 1px solid #e0dede;
+  border-radius: 6px;
+}
+
+.button {
+  font-size: 1.3rem;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-weight: 300;
+  margin-left: 20px;
+  padding: 12px 10px;
+  background-color: #36b7be;
+  color: #ffffff;
 }
 
 .section2-container {
-  padding: 7% 17% 7% 7%;
-  background-color: #f6fbfc;
-  margin: 0 2%;
+  padding: 3% 20%;
 }
 
-.section2 h1 {
-  color: #36b7be;
-  font-size: 3.3rem;
-  font-weight: 800;
-  line-height: 3.5rem;
-  padding: 0 180px;
+.section2 h3 {
+  padding-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-.section2-right {
-  padding: 10rem 0 0;
-  text-align: right;
-}
-
-.section2 h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-}
-
-/* section-3 */
-.section3-container {
-  text-align: center;
-  padding: 10%;
-}
-
-.section3 h1 {
-  color: #36b7be;
-  font-size: 3.3rem;
-  font-weight: 800;
-  line-height: 3rem;
-}
-
-.space {
-  padding-left: 6rem;
-}
-
-.hr {
-  margin: 210px 0.5rem;
-  padding: 0;
-  text-align: center;
-}
-
-.img1 {
-  padding-top: 100px;
-  width: 220px;
-}
-
-.img2 {
-  padding-top: 150px;
-  width: 220px;
-}
-
-.img3 {
-  padding-top: 170px;
-  width: 220px;
-}
-
-.section3 h4 {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.section3 p {
-  color: #6f7a98;
-  font-size: 1rem;
-}
-
-.section3-col {
-  position: relative;
-  padding: 0;
-}
-
-.section3-des {
-  position: absolute;
-  top: 350px;
-}
-
-/* section-4 */
-.section4-container {
-  background-color: #f6fbfc;
-  padding: 7% 13% 7% 10%;
-  text-align: center;
-}
-
-.section4-left {
-  text-align: left;
-  padding: 100px 0;
-}
-
-.section4-left button {
-  margin: 25px 0;
-  padding: 10px 20px;
-}
-
-.section4-img {
-  width: 110%;
-  padding-left: 50px;
-}
-
-.section4 h1 {
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-
-.section4 p {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.1rem;
-  line-height: 0.7rem;
+.section2 p {
+  font-family: "Ubuntu";
   color: #3c3a3a;
+  padding: 20px 0 10px;
 }
 
 /* footer */
 .footer-container {
-  font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  /* background-color: #f6fbfc; */
-  padding: 4% 10% 1%;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f6fbfc;
+  padding: 3% 10% 1%;
 }
 
 .footer-left {

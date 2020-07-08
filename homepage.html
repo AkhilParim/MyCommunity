@@ -16,6 +16,7 @@
 
   <!-- CSS stylesheet -->
   <link rel="stylesheet" href="CSS/homepage.css">
+  <link rel="stylesheet" href="CSS/NavCartFooter.css">
 
   <!-- JS-->
   <script src="cart.js"></script>
@@ -59,36 +60,38 @@
 
 
   <!-- *******************  Sections  ******************* -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img src="Images/logo.jpg" alt="">
+    <a class="navbar-brand" href="#">My Community</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orderpage.html">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Account</a>
+        </li>
+        <li class="nav-item">
+          <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <section class="section1">
     <div class="container-fluid section1-container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="Images/logo.jpg" alt="">
-        <a class="navbar-brand" href="#">My Community</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="orderpage.html">Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Account</a>
-            </li>
-            <li class="nav-item">
-              <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="row">
         <div class="col-md-6 section1-left">
@@ -97,7 +100,7 @@
           <h1 class='h1-bottom'>in your Community</h1>
           <p> Check out different services provided by members</p>
           <p> of your commuity.</p>
-          <button type="button" class="btn btn-info btn-lg button">Place an Order</button>
+          <button onclick="window.location.href ='orderpage.html';" type="button" class="btn btn-info btn-lg button">Place an Order</button>
         </div>
         <div class="col-md-6 section1-right">
           <img class="home-section1" src="Images/homesection1.svg" alt="image" width="200%" height="60%">
@@ -170,7 +173,7 @@
           <p>Do you want to start any business or join our </p>
           <p>list of MasterChefs in your community? We are Open!</p>
           <p></p>
-          <button type="button" class="btn btn-info btn-lg button">Join Us</button>
+          <button onclick="window.location.href ='join_us.html';" type="button" class="btn btn-info btn-lg button">Join Us</button>
         </div>
         <div class="col-md-6">
           <img class="section4-img" src="Images/join_us.svg" alt="joinUs">

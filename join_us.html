@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>OrderPage</title>
+  <title>JoinUs</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -13,7 +13,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="CSS/orderpage.css">
+  <link rel="stylesheet" href= "CSS/joinUs.css">
+  <link rel="stylesheet" href="CSS/NavCartFooter.css">
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
@@ -125,19 +128,88 @@
         </div>
       </nav>
     </div>
-
+<!-- section 1(header)-->
     <section class="section1">
         <div class="container-fluid section1-container">
             <h1>Welcome to our family</h1>
             <h2> Become a creator in your community</h2>
         </div>
     </section>
+
+  <!-- Section 2( forms)-->
     <section class="section2">
         <div class="details">
-            <p>please confirm your existing details</p>
+            <h2 class="heading">Please fill the following details</h2>
             
         </div>
     </section>
+    <section class="forms">
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Name of Bussiness</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="text" placeholder="Bussiness">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="desctext" placeholder="Tell us few lines about yourself or Bussiness">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Categery</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Food
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Services
+              </label>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-2">Add Item</div>
+        <div class="col-sm-10">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">product name</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <form action="/action_page.php">
+                <label for="quantity">Price :</label>
+                <input type="number" id="quantity" name="quantity" min="1">
+                
+              </form>
+              <a href="#" class="btn btn-primary">Upload image</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Section 3-->
+  <section class="sec3 p">
+    <h2 class="heading">  Your Items</h2>
+  </section>
+
   
 </body>  
 </html>

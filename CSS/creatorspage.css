@@ -1,13 +1,13 @@
 
 /* section1 */
 .section1-container {
-  padding: 4% 0 5%;
+  padding: 4% 7% 3%;
   text-align: center;
   background-color: #f6fbfc;
 }
 
 .section1-container img {
-  width: 500px;
+  width: 600px;
   border-radius: 10px;
 }
 
@@ -18,66 +18,34 @@
   margin: 0;
 }
 
-.section1 p {
+.section1-left p {
   font-size: 1.7rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-weight: 500;
+  margin: 10px 0 30px;
 }
 
-input[type="number"] {
-  position: relative;
-  font-size: 1.2rem;
-  padding-left: 12px;
-  top: 3px;
-  height: 55px;
-  width: 60px;
-  border: 1px solid #e0dede;
-  border-radius: 6px;
+.section1-right {
+  padding-top: 50px;
+  text-align: left;
 }
-
-.button {
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin-left: 20px;
-  padding: 12px 10px;
-  background-color: #36b7be;
-  color: #ffffff;
-}
-
-/* section2 */
-.section2-container {
-  padding: 3% 20% 6%;
-}
-
-.section2 h3 {
+.section1 h3 {
   padding-top: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
-.section2 p {
+.section1-right p {
   font-family: "Ubuntu";
   color: #3c3a3a;
-  padding: 20px 0 10px;
 }
 
-.section2 .button {
-  margin: 0;
-  padding: 12px 20px;
-}
-.sec2btn {
-  text-align: center;
-  margin-top: 40px;
+/* section2 */
+.section2 {
+  padding: 5% 10% 3%;
 }
 
-/* sectoin3 */
-.section3 {
-  background-color: #f6fbfc;
-  padding: 3% 10% 3%;
-}
-
-.section3 h1 {
+.section2 h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;  color: #39a3be;

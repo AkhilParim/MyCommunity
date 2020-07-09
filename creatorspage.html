@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>OrderPage</title>
+  <title>Creator's Page</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -13,7 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="CSS/orderpage.css">
+  <link rel="stylesheet" href="CSS/creatorspage.css">
   <link rel="stylesheet" href="CSS/NavCartFooter.css">
 
   <!-- Google Fonts -->
@@ -26,40 +26,9 @@
 
   <!-- Javascript -->
   <script src="cart.js"></script>
-
-
-  <script type="text/javascript" language="javascript">
-    function showHide() {
-      var btn = document.getElementById("product");
-      var btn1 = document.getElementById("service");
-      var ele = document.getElementById("showHideDiv");
-      var ele1 = document.getElementById("showHideDiv1");
-      if (!("active" in btn.classList)) {
-        btn.classList.add("active-btn");
-      }
-      btn1.classList.remove("active-btn");
-      ele1.style.display = "none";
-      ele.style.display = "block";
-    }
-
-    function showHide1() {
-      var btn = document.getElementById("product");
-      var btn1 = document.getElementById("service");
-      var ele = document.getElementById("showHideDiv");
-      var ele1 = document.getElementById("showHideDiv1");
-      if (!("active" in btn1.classList)) {
-        btn1.classList.add("active-btn");
-      }
-      btn.classList.remove("active-btn");
-      ele.style.display = "none";
-      ele1.style.display = "block";
-    }
-  </script>
-
 </head>
 
 <body>
-
   <!-- *******************  Cart  ******************* -->
   <div id="mySidenav" class="sidenav">
     <div class="cart-head">
@@ -78,9 +47,7 @@
         </div>
 
         <div>
-
           <input type="number" class="quantity" name="quantity" min="1" value="1">
-
         </div>
       </div>
 
@@ -94,16 +61,14 @@
   <!-- *******************  Cart Close  ******************* -->
 
 
-  <!-- *******************  Sections  ******************* -->
+  <!-- *******************  NavBar  ******************* -->
 
   <div class="navigationbar">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a href="homepage.html">
       <img src="Images/logo.jpg" alt="">
-      </a>
       <a class="navbar-brand" href="#">My Community</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -111,7 +76,7 @@
           <li class="nav-item">
             <a class="nav-link" href="homepage.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="orderpage.html">Order <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -128,130 +93,85 @@
     </nav>
   </div>
 
-
+  <!-- *******************  Sections  ******************* -->
 
   <section class="section1">
     <div class="container-fluid section1-container">
-      <h1>Discover Products</h1>
-      <h1>and Services.</h1>
-    </div>
-  </section>
-
-  <section class="section2">
-    <div class="container-fluid section2-container">
-      <button id="product" class="btn btn-outline-info btn-lg button1 active-btn" onclick="return showHide();">Food</button>
-      <button id="service" class="btn btn-outline-info btn-lg button1" onclick="return showHide1();">Services</button>
-
-      <div id="showHideDiv" style="display:block;">
-        <div class="row">
-          <div class="col-lg-6 items">
-              <div class="inside">
-            <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Food</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-            <div class="inside">
-            <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Food</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-              <div class="inside">
-            <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Food</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-              <div class="inside">
-            <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Food</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-6 section1-left">
+          <img src="Images/exampleImage.jpeg" alt="image">
+          <h1>Creator Name</h1>
+          <p>Food/Service</p>
         </div>
-        </div>
-
-      <div id="showHideDiv1" style="display:none;">
-        <div class="row">
-          <div class="col-lg-6 items">
-            <div class="inside">
-              <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Service</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-            <div class="inside">
-              <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Service</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-            <div class="inside">
-              <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Service</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 items">
-            <div class="inside">
-              <a href="itemspage.html">
-              <img src="Images/exampleImage.png" alt="image">
-              <h3>Service</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-              <form>
-                <input type="number" min="1" value="1">
-                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
-              </form>
-            </div>
-          </div>
+        <div class="col-sm-6 section1-right">
+          <h3>Description</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container-fluid footer-container" style="background-color: #f6fbfc;">
+  <section class="section2">
+    <h1>Products I Sell</h1>
+        <div class="row">
+          <div class="col-lg-6 items">
+            <div class="inside">
+              <a href="itemspage.html">
+                <img src="Images/exampleImage.png" alt="image">
+                <h3>Food</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </a>
+              <form>
+                <input type="number" min="1" value="1">
+                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 items">
+            <div class="inside">
+              <a href="itemspage.html">
+                <img src="Images/exampleImage.png" alt="image">
+                <h3>Food</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </a>
+              <form>
+                <input type="number" min="1" value="1">
+                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 items">
+            <div class="inside">
+              <a href="itemspage.html">
+                <img src="Images/exampleImage.png" alt="image">
+                <h3>Food</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </a>
+              <form>
+                <input type="number" min="1" value="1">
+                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 items">
+            <div class="inside">
+              <a href="itemspage.html">
+                <img src="Images/exampleImage.png" alt="image">
+                <h3>Food</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </a>
+              <form>
+                <input type="number" min="1" value="1">
+                <button type="submit" class="btn btn-outline-info btn-lg button2">Add To Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  </section>
+
+<footer class="footer" style="background-color:#f6fbfc">
+  <div class="container-fluid footer-container">
     <div class="row">
       <div class="col-md-3 footer-left">
         <img src="Images/logo.jpg" alt="logo">
@@ -262,7 +182,9 @@
       </div>
       <div class="col-md-4">
         <ul class="footer-right" style="list-style-type: none;">
-          <li><h6>My Community</h6></li>
+          <li>
+            <h6>My Community</h6>
+          </li>
           <li><a href="homepage.html">Home</a></li>
           <li><a href="orderpage.html">Order</a></li>
           <li><a href="#">Company</a></li>
@@ -270,8 +192,9 @@
         </ul>
       </div>
     </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
+
 </html>

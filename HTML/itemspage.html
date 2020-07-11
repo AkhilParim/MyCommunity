@@ -13,8 +13,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="CSS/items.css">
-  <link rel="stylesheet" href="CSS/NavCartFooter.css">
+  <link rel="stylesheet" href="../CSS/items.css">
+  <link rel="stylesheet" href="../CSS/NavCartFooter.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
@@ -24,23 +24,22 @@
   <script src="https://kit.fontawesome.com/5a08023153.js" crossorigin="anonymous"></script>
 
   <!-- Javascript -->
-  <script src="cart.js"></script>
+  <script src="../JS/cart.js"></script>
 </head>
 
 <body>
   <!-- *******************  Cart  ******************* -->
   <div id="mySidenav" class="sidenav">
     <div class="cart-head">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <a class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
       <h2 class="cart-info">Your cart</h2>
     </div>
     <hr class="line-thick">
 
-
     <div class="cart-content">
       <!-- Cart Item -->
       <div class="cart-item">
-        <img src="./Images/sarees.jpg" alt="saree">
+        <img src="../Images/sarees.jpg" alt="saree">
         <div>
           <h3>Silk saree</h3>
           <h5>Rs. 900</h5>
@@ -67,40 +66,45 @@
   <!-- *******************  NavBar  ******************* -->
 
   <div class="navigationbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <img src="Images/logo.jpg" alt="">
-      <a class="navbar-brand" href="#">My Community</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="homepage.html">
+        <img src="../Images/logo.jpg" alt="">
+        </a>
+        <a class="navbar-brand" href="homepage.html">My Community</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="homepage.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="orderpage.html">Order <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Company</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My Account</a>
-          </li>
-          <li class="nav-item">
-            <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="orderpage.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="join_us.html">Join us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myAccount.html">My Account</a>
+            </li>
+            <li class="nav-item">
+              <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </div>
 
 <!-- *******************  Sections  ******************* -->
 
   <section class="section1">
     <div class="container-fluid section1-container">
-      <img src="Images/exampleImage.jpeg" alt="image">
+      <img src="../Images/exampleImage.jpeg" alt="image">
       <h1>Product</h1>
       <p>Rs. 100</p>
       <form>
@@ -129,7 +133,7 @@
       <div class="col-lg-6 items">
         <div class="inside">
           <a href="itemspage.html">
-            <img src="Images/exampleImage.png" alt="image">
+            <img src="../Images/exampleImage.png" alt="image">
             <h3>Food</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </a>
@@ -142,7 +146,7 @@
       <div class="col-lg-6 items">
         <div class="inside">
           <a href="itemspage.html">
-            <img src="Images/exampleImage.png" alt="image">
+            <img src="../Images/exampleImage.png" alt="image">
             <h3>Food</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </a>
@@ -155,7 +159,7 @@
       <div class="col-lg-6 items">
         <div class="inside">
           <a href="itemspage.html">
-            <img src="Images/exampleImage.png" alt="image">
+            <img src="../Images/exampleImage.png" alt="image">
             <h3>Food</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </a>
@@ -168,7 +172,7 @@
       <div class="col-lg-6 items">
         <div class="inside">
           <a href="itemspage.html">
-            <img src="Images/exampleImage.png" alt="image">
+            <img src="../Images/exampleImage.png" alt="image">
             <h3>Food</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </a>
@@ -185,7 +189,7 @@
     <div class="container-fluid footer-container">
       <div class="row">
         <div class="col-md-3 footer-left">
-          <img src="Images/logo.jpg" alt="logo">
+          <img src="../Images/logo.jpg" alt="logo">
           <h6>Let's help build our</h6>
           <h6>community businesses.</h6>
         </div>

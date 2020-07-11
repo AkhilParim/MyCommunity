@@ -1,0 +1,17 @@
+
+
+.section1 {
+  background-color: #f6fbfc;
+  text-align: center;
+}
+.section1 img {
+  width: 250px;
+  float: left;
+  padding-right: 30px; 
+}
+
+
+.menu {
+    background-color: #fff;
+    border: none;
+}

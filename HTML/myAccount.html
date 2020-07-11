@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Account</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../CSS/myAccount.css">
+  <link rel="stylesheet" href="../CSS/NavCartFooter.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5a08023153.js" crossorigin="anonymous"></script>
+
+  <!-- JS-->
+  <script src="../JS/cart.js"></script>
+
+  <script type="text/javascript" language="javascript">
+    function showHide() {
+      var btn = document.getElementById("profile");
+      var btn1 = document.getElementById("orders");
+      var btn2 = document.getElementById("security");
+
+      var ele = document.getElementById("showHideDiv");
+      var ele1 = document.getElementById("showHideDiv1");
+      var ele2 = document.getElementById("showHideDiv2");
+
+      if (!("active" in btn.classList)) {
+        btn.classList.add("active-btn");
+      }
+      btn1.classList.remove("active-btn");
+      btn2.classList.remove("active-btn");
+
+      ele.style.display = "block";
+      ele1.style.display = "none";
+      ele2.style.display = "none";
+    }
+
+    function showHide1() {
+      var btn = document.getElementById("profile");
+      var btn1 = document.getElementById("orders");
+      var btn2 = document.getElementById("security");
+
+      var ele = document.getElementById("showHideDiv");
+      var ele1 = document.getElementById("showHideDiv1");
+      var ele2 = document.getElementById("showHideDiv2");
+
+      if (!("active" in btn1.classList)) {
+        btn1.classList.add("active-btn");
+      }
+      btn.classList.remove("active-btn");
+      btn2.classList.remove("active-btn");
+
+      ele1.style.display = "block";
+      ele.style.display = "none";
+      ele2.style.display = "none";
+    }
+
+    function showHide2() {
+      var btn = document.getElementById("profile");
+      var btn1 = document.getElementById("orders");
+      var btn2 = document.getElementById("security");
+
+      var ele = document.getElementById("showHideDiv");
+      var ele1 = document.getElementById("showHideDiv1");
+      var ele2 = document.getElementById("showHideDiv2");
+
+      if (!("active" in btn2.classList)) {
+        btn2.classList.add("active-btn");
+      }
+      btn.classList.remove("active-btn");
+      btn1.classList.remove("active-btn");
+
+      ele2.style.display = "block";
+      ele.style.display = "none";
+      ele1.style.display = "none";
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <!-- *******************  Cart  ******************* -->
+  <div id="mySidenav" class="sidenav">
+    <div class="cart-head">
+      <a class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <h2 class="cart-info">Your cart</h2>
+    </div>
+    <hr class="line-thick">
+
+    <div class="cart-content">
+      <!-- Cart Item -->
+      <div class="cart-item">
+        <img src="../Images/sarees.jpg" alt="saree">
+        <div>
+          <h3>Silk saree</h3>
+          <h5>Rs. 900</h5>
+          <span class="remove-item">Remove</span>
+        </div>
+        <div>
+          <input type="number" class="quantity" name="quantity" min="1" value="1">
+        </div>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <h3>Your Total: Rs. <span class="cart-total">0</span></h3>
+      <button class="btn btn-info btn-lg cart-button">Checkout</button>
+    </div>
+  </div>
+  <!-- *******************  Cart Close  ******************* -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a href="homepage.html">
+      <img src="../Images/logo.jpg" alt="">
+    </a>
+    <a class="navbar-brand" href="homepage.html">My Community</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orderpage.html">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="join_us.html">Join us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="myAccount.html">My Account</a>
+        </li>
+        <li class="nav-item">
+          <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section1">
+    <div class="container-fluid section2-container">
+      <img src="../Images/exampleImage.png" alt="profile photo">
+      <h3>Full Name</h3>
+    </div>
+  </section>
+
+  <div class="accountMenu">
+    <button id="profile" class="menu active-btn" onclick="return showHide()">Profile</button>
+    <button id="orders" class="menu" onclick="return showHide1()">Your Orders</button>
+    <button id="security" class="menu" onclick="return showHide2()">Security</button>
+  </div>
+
+  <section class="section2">
+    <div class="container-fluid section2-container">
+      <div id="showHideDiv" style="display:block;"">
+        <h2>Account Info</h2>
+        <label for=" username">Full Name: </label>
+        <input type="text" name="username" value="Name">
+        <button class=" btn btn-info btn-lg cart-button">Save Changes</button>
+
+      </div>
+
+      <div id="showHideDiv1" style="display:none;"">
+        <h2>Your Orders</h2>
+      </div>
+
+      <div id=" showHideDiv2" style="display:none;"">
+        <h2>Security</h2>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>

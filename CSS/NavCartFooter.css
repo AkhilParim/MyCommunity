@@ -37,7 +37,7 @@
 .line-thick{
   border: 6px solid;
   border-radius: 3px;
-  
+
 }
 .sidenav {
   font-family: 'Montserrat', sans-serif;
@@ -69,6 +69,7 @@
 }
 
 .sidenav .closebtn {
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 25px;

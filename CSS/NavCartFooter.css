@@ -25,6 +25,7 @@
 }
 
 /* -------------------- Cart --------------------- */
+
 .cart-btn {
   background-color: #36b7be;
   color: white;
@@ -33,7 +34,11 @@
   cursor: pointer;
   margin-left: 6px;
 }
-
+.line-thick{
+  border: 6px solid;
+  border-radius: 3px;
+  
+}
 .sidenav {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;

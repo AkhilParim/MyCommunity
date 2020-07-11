@@ -10,13 +10,21 @@
     font-weight: 700;
     line-height: 3.5rem;
   }
-  .heading{
+.heading{
       font-size: 30px;
       color: #36b7be;
       padding: 7% 10% 3%;
   }
+.header{
+    justify-content: space-around;
+}
 
- 
+.hey_there{
+    width: 940px;
+    height: 230px;
+    padding-left: 334px;
+    padding-bottom: 24px;
+}
 .forms{
     padding: 90px;
 }

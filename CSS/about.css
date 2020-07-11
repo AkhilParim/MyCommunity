@@ -1,0 +1,27 @@
+.fa-heart{
+    color: red;
+    
+}
+
+
+.sec{
+    display: flex;
+    margin: 100px;
+    margin-bottom: 200px;
+}
+h2{
+    font-family: 'montesserat', cursive;
+    margin-top: 100px;
+    margin-right: 140px;
+}
+
+#bottom{
+    font-family: 'Bungee', cursive;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }

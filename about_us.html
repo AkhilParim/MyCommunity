@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JoinUs</title>
+  <title>AboutUs</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -13,7 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- CSS stylesheet -->
-  <link rel="stylesheet" href= "CSS/joinUs.css">
+  <link rel="stylesheet" href="CSS/about.css">
   <link rel="stylesheet" href="CSS/NavCartFooter.css">
   <link rel="stylesheet" href="CSS/orderpage.css">
 
@@ -23,7 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+  
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/5a08023153.js" crossorigin="anonymous"></script>
 
@@ -69,6 +71,7 @@
         <h2 class="cart-info">Your cart</h2>
       </div>
       <hr class="line-thick">
+
       <div class="cart-content">
         <!-- Cart Item -->
         <div class="cart-item">
@@ -129,85 +132,58 @@
         </div>
       </nav>
     </div>
-<!-- section 1(header)-->
+
+    <!--section1-->
     <section class="section1">
-        <div class="container-fluid section1-container header">
-            <h1>Welcome to our family</h1>
-            <h2> Become a creator in your community</h2>
-            <img class="hey_there"src="./Images/hey_there.svg" alt="welcome">
-
+        <div class="container-fluid section1-container">
+            <h1> We Made this with lot of <i class="fa fa-heart" aria-hidden="true"></i></h1>
         </div>
     </section>
+<section class="section-2">
+    <div class= "sec">
+    <h2 class="desc">We are a bunch of college students trying to solve some of the problems we see in our communities. </h2>
+    <img class="street" src="./Images/empty_street_sfxm.svg" alt="">
+</div>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span> 
+<div class="sec">
+    <h2>We thought of building this platform to encourage more creators to start their bussiness or expand current ones and make them leverage the power of internet.</h2>
+    <img src="./Images/business_shop.svg" alt="business_shop">
 
-  <!-- Section 2( forms)-->
-    <section class="section2">
-        <div class="details">
-            <h2 class="heading">Please fill the following details</h2>
-            
+</div>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span> 
+<div class="sec">
+    <h2 id="bottom"> This is just a part of our complete project, we have much more in store for you. Keep watching this space.</h2>
+    <img src="./Images/mission.svg" alt="mission">
+</div>
+</section>
+
+<footer class="footer">
+    <div class="container-fluid footer-container">
+      <div class="row">
+        <div class="col-md-3 footer-left">
+          <img src="Images/logo.jpg" alt="logo">
+          <h6>Let's help build our</h6>
+          <h6>community businesses.</h6>
         </div>
-    </section>
-    <section class="forms">
-    <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Name of Bussiness</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="text" placeholder="Bussiness">
+        <div class="col-md-5">
         </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="desctext" placeholder="Tell us few lines about yourself or Bussiness">
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Categery</legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Food
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Services
-              </label>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </fieldset>
-      <div class="form-group row">
-        <div class="col-sm-2">Add Item</div>
-        <div class="col-lg-6 items">
-          <div class="inside">
-            <a href="itemspage.html">
-            <img src="Images/exampleImage.png" alt="image">
-            <h3>Service</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
-            <button type="submit" class="btn btn-outline-info btn-lg button2">Upload Image</button>
-            <div class="row price">
-            <p>Confirm  price:  </p>
-        
-            <form>
-              <input type="number" min="1" value="1">
-            </form>
-          </div>
-          </div>
+        <div class="col-md-4">
+          <ul class="footer-right" style="list-style-type: none;">
+            <li>
+              <h6>My Community</h6>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="orderpage.html">Order</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
         </div>
       </div>
-      
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </form>
-  </section>
-    
-</body>  
-</html>
+    </div>
+  </footer>

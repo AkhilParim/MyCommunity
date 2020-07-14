@@ -29,6 +29,17 @@
     padding: 90px;
 }
 
+.form-check{
+    text-align: start;
+}
+.same-line{
+    text-align: right;
+    justify-content: center;
+    clear: both;
+    margin-right:8px;
+   
+}
+
 .col-sm-10{
     margin-bottom: 20px;
        

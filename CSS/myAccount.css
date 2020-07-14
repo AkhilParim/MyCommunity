@@ -1,17 +1,166 @@
-
-
-.section1 {
-  background-color: #f6fbfc;
+/* section1 */
+.section1-container {
+  padding: 4% 0 5%;
   text-align: center;
-}
-.section1 img {
-  width: 250px;
-  float: left;
-  padding-right: 30px; 
+  background-color: #f6fbfc;
 }
 
+.section1-container img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.section1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 30px 0 0;
+  margin: 0;
+}
+
+.accountMenu {
+  padding-top: 4%;
+  text-align: center;
+  font-size: 1.1rem;
+}
 
 .menu {
-    background-color: #fff;
-    border: none;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  width: 13.5%;
+  padding: 0 0 7px;
+  margin: 0 2%;
+  background-color: #fff;
+  border: none;
+  border-bottom: solid #888888;
+}
+
+.active-btn {
+  color: #39a3be;
+  border-color: #39a3be;
+}
+
+/**************** section2 ****************/
+.section2-container {
+  padding: 4% 16.5% 10%;
+}
+
+/* showHideDiv */
+.noProducts {
+  padding-top: 70px;
+  text-align: center;
+}
+
+/* showHideDiv1 */
+.section2 h5 {
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+}
+#showHideDiv1 hr {
+margin: 33px 0 28px;;
+}
+#showHideDiv1 .form-group {
+  margin: 16px 0;
+}
+#showHideDiv1 .form-control {
+  width: 500px;
+  color: #000;
+}
+#showHideDiv1 label {
+  padding-top: 6px;
+  width: 100px;
+}
+#showHideDiv1 .des {
+  margin: 10px 0 0;
+  width: 600px;
+  height: 270px;
+  text-align: left;
+}
+#showHideDiv1 .address {
+  width: 600px;
+}
+
+.buttons {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.cancel {
+  padding: 12px 16px;
+  font-size: 1rem;
+  margin-top: 40px;
+  background-color: #f5f5f5;
+  width: 350px;
+  border-radius: 30px;
+  border-color: #fff;
+  color: #000;
+}
+
+.cancel:hover {
+  color: #000;
+  border-color: #fff;
+  background-color: #e4e3e3;
+}
+
+.save {
+  padding: 12px 16px;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 350px;
+  border-radius: 30px;
+  border-color: #fff;
+}
+
+/* showHideDiv2 */
+.account-orders {
+  position: relative;
+}
+.account-orders img {
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+}
+.account-orders {
+  padding-bottom: 0;
+}
+.account-orders p {
+  margin-bottom: 4px;
+}
+.account-orders button {
+  float: right;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+.account-orders a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* showHideDiv3 */
+#showHideDiv3 .readonly {
+  border: none;
+  background-color: #fff;
+}
+
+.edit-btn, .close-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 300px;
+}
+.edit-btn:hover, .close-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#showHideDiv3a .form-group {
+  width: 600px;
+  margin-left: 0;
+}
+
+#showHideDiv3a .buttons {
+  text-align: left;
+  padding-left: 125px;
 }

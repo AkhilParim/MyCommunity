@@ -19,68 +19,131 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/5a08023153.js" crossorigin="anonymous"></script>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
   <!-- JS-->
   <script src="../JS/cart.js"></script>
 
   <script type="text/javascript" language="javascript">
     function showHide() {
-      var btn = document.getElementById("profile");
-      var btn1 = document.getElementById("orders");
-      var btn2 = document.getElementById("security");
+      var btn = document.getElementById("products");
+      var btn1 = document.getElementById("profile");
+      var btn2 = document.getElementById("orders");
+      var btn3 = document.getElementById("security");
+      var edit = document.getElementById("showHideDiv3a");
 
       var ele = document.getElementById("showHideDiv");
       var ele1 = document.getElementById("showHideDiv1");
       var ele2 = document.getElementById("showHideDiv2");
+      var ele3 = document.getElementById("showHideDiv3");
 
       if (!("active" in btn.classList)) {
         btn.classList.add("active-btn");
       }
       btn1.classList.remove("active-btn");
       btn2.classList.remove("active-btn");
+      btn3.classList.remove("active-btn");
 
       ele.style.display = "block";
       ele1.style.display = "none";
       ele2.style.display = "none";
+      ele3.style.display = "none";
+      edit.style.display = "none";
     }
 
     function showHide1() {
-      var btn = document.getElementById("profile");
-      var btn1 = document.getElementById("orders");
-      var btn2 = document.getElementById("security");
+      var btn = document.getElementById("products");
+      var btn1 = document.getElementById("profile");
+      var btn2 = document.getElementById("orders");
+      var btn3 = document.getElementById("security");
+      var edit = document.getElementById("showHideDiv3a");
 
       var ele = document.getElementById("showHideDiv");
       var ele1 = document.getElementById("showHideDiv1");
       var ele2 = document.getElementById("showHideDiv2");
+      var ele3 = document.getElementById("showHideDiv3");
 
       if (!("active" in btn1.classList)) {
         btn1.classList.add("active-btn");
       }
       btn.classList.remove("active-btn");
       btn2.classList.remove("active-btn");
+      btn3.classList.remove("active-btn");
 
       ele1.style.display = "block";
       ele.style.display = "none";
       ele2.style.display = "none";
+      ele3.style.display = "none";
+      edit.style.display = "none";
     }
 
     function showHide2() {
-      var btn = document.getElementById("profile");
-      var btn1 = document.getElementById("orders");
-      var btn2 = document.getElementById("security");
+      var btn = document.getElementById("products");
+      var btn1 = document.getElementById("profile");
+      var btn2 = document.getElementById("orders");
+      var btn3 = document.getElementById("security");
+      var edit = document.getElementById("showHideDiv3a");
 
       var ele = document.getElementById("showHideDiv");
       var ele1 = document.getElementById("showHideDiv1");
       var ele2 = document.getElementById("showHideDiv2");
+      var ele3 = document.getElementById("showHideDiv3");
 
       if (!("active" in btn2.classList)) {
         btn2.classList.add("active-btn");
       }
       btn.classList.remove("active-btn");
       btn1.classList.remove("active-btn");
+      btn3.classList.remove("active-btn");
 
       ele2.style.display = "block";
       ele.style.display = "none";
       ele1.style.display = "none";
+      ele3.style.display = "none";
+      edit.style.display = "none";
+    }
+
+    function showHide3() {
+      var btn = document.getElementById("products");
+      var btn1 = document.getElementById("profile");
+      var btn2 = document.getElementById("orders");
+      var btn3 = document.getElementById("security")
+
+      var ele = document.getElementById("showHideDiv");
+      var ele1 = document.getElementById("showHideDiv1");
+      var ele2 = document.getElementById("showHideDiv2");
+      var ele3 = document.getElementById("showHideDiv3");
+      var edit = document.getElementById("showHideDiv3a");
+
+      if (!("active" in btn3.classList)) {
+        btn3.classList.add("active-btn");
+      }
+      btn.classList.remove("active-btn");
+      btn1.classList.remove("active-btn");
+      btn2.classList.remove("active-btn");
+
+      ele3.style.display = "block";
+      ele.style.display = "none";
+      ele1.style.display = "none";
+      ele2.style.display = "none";
+      edit.style.display = "none";
+    }
+
+    function showHide3edit() {
+      var ele3 = document.getElementById("showHideDiv3");
+      var edit = document.getElementById("showHideDiv3a");
+
+      ele3.style.display = "none";
+      edit.style.display = "block";
+    }
+
+    function showHide3close() {
+      var ele3 = document.getElementById("showHideDiv3");
+      var edit = document.getElementById("showHideDiv3a");
+
+      ele3.style.display = "block";
+      edit.style.display = "none";
     }
   </script>
 
@@ -151,38 +214,146 @@
   </nav>
 
   <section class="section1">
-    <div class="container-fluid section2-container">
-      <img src="../Images/exampleImage.png" alt="profile photo">
-      <h3>Full Name</h3>
-    </div>
+    <div class="container-fluid section1-container">
+      <img src="../Images/exampleImage.jpeg" alt="image">
+      <h1>Name</h1>
   </section>
 
   <div class="accountMenu">
-    <button id="profile" class="menu active-btn" onclick="return showHide()">Profile</button>
-    <button id="orders" class="menu" onclick="return showHide1()">Your Orders</button>
-    <button id="security" class="menu" onclick="return showHide2()">Security</button>
+    <button id="products" class="menu active-btn" onclick="return showHide()">Products</button>
+    <button id="profile" class="menu" onclick="return showHide1()">Profile</button>
+    <button id="orders" class="menu" onclick="return showHide2()">Your Orders</button>
+    <button id="security" class="menu" onclick="return showHide3()">Security</button>
   </div>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
   <section class="section2">
     <div class="container-fluid section2-container">
-      <div id="showHideDiv" style="display:block;"">
-        <h2>Account Info</h2>
-        <label for=" username">Full Name: </label>
-        <input type="text" name="username" value="Name">
-        <button class=" btn btn-info btn-lg cart-button">Save Changes</button>
+      <div id="showHideDiv" style="display:block;">
+        <h5>Your Products</h5>
+        <div class="noProducts">
+          <p>Join us to start a bussiness in your community!</p>
+          <button onclick="window.location.href ='join_us.html';" class="btn btn-info btn-lg">Join Us</button>
+        </div>
+      </div>
+
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div id="showHideDiv1" style="display:none;">
+        <h5>Personal Info</h5>
+        <div class="form-group row">
+          <label for="username">Name: </label>
+          <input type="text" class="form-control" name="username" value="Abcd">
+        </div>
+
+        <hr>
+        <h5>Description</h5>
+        <textarea type="text" class="form-control des"
+          name="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea><br>
+
+        <hr>
+        <h5>Contact</h5>
+        <div class="form-group row">
+          <label for="mobile">Mobile: </label>
+          <input type="tel" class="form-control" name="mobile" value="+91 92345678"><br>
+        </div>
+        <div class="form-group row">
+          <label for="email">Mail id: </label>
+          <input type="email" class="form-control" name="email" value="abc@gmail.com"><br>
+        </div>
+
+        <hr>
+        <h5>Address</h5>
+        <div class="form-group row">
+          <input type="text" class="form-control address" name="address" value="Street1, Area 2, City, 123456"><br>
+        </div>
+
+        <hr>
+        <div class="buttons">
+          <button class="btn btn-info btn-lg cancel">Cancel</button><br>
+          <button class="btn btn-info btn-lg save">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div id="showHideDiv2" style="display:none;">
+        <h5>Your Orders</h5>
+        <hr>
+
+        <div class="account-orders">
+          <img src="../Images/exampleImage.jpeg" alt="">
+          <a href="itemspage.html">
+            <h5>Item Name</h5>
+            <p>Quantity</p>
+            <h6>Status: On it's way!</h6>
+          </a>
+          <button class="btn btn-info btn-md">Order Again</button>
+          <hr>
+        </div>
+
+        <div class="account-orders">
+          <img src="../Images/exampleImage.jpeg" alt="">
+          <a href="itemspage.html">
+            <h5>Item Name</h5>
+            <p>Quantity</p>
+            <h6>Status: Delivered 14 Jul</h6>
+          </a>
+          <button class="btn btn-info btn-md">Order Again</button>
+          <hr>
+        </div>
 
       </div>
 
-      <div id="showHideDiv1" style="display:none;"">
-        <h2>Your Orders</h2>
-      </div>
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-      <div id=" showHideDiv2" style="display:none;"">
-        <h2>Security</h2>
+      <div id="showHideDiv3" style="display:none;">
+        <h5>Password<span><button class="edit-btn" onclick="return showHide3edit()">Edit</button></span></h5>
+        <input class="form-control readonly" type="password" placeholder="******" readonly>
+      </div>
+      <div id="showHideDiv3a" style="display:none;">
+        <h5>Password<span><button class="close-btn" onclick="return showHide3close()">Close</button></span></h5>
+        <div class="form-group row">
+          <input type="password" class="form-control" name="currentPass" placeholder="Current Password"><br>
+        </div>
+        <div class="form-group row">
+          <input type="password" class="form-control" name="newPass" placeholder="New Password"><br>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-info btn-lg cancel">Cancel</button><br>
+          <button class="btn btn-info btn-lg save">Save Changes</button>
+        </div>
       </div>
 
     </div>
   </section>
+
+  <footer class="footer" style="background-color: #f6fbfc;">
+    <div class="container-fluid footer-container">
+      <div class="row">
+        <div class="col-md-3 footer-left">
+          <img src="../Images/logo.jpg" alt="logo">
+          <h6>Let's help build our</h6>
+          <h6>community businesses.</h6>
+        </div>
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-4">
+          <ul class="footer-right" style="list-style-type: none;">
+            <li>
+              <h6>My Community</h6>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="orderpage.html">Order</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

@@ -113,17 +113,21 @@
 
 .img1 {
   padding-top: 100px;
-  width: 220px;
+  width: 280px;
+  padding-left: 11px;
 }
 
 .img2 {
-  padding-top: 150px;
-  width: 220px;
+  padding-top: 140px;
+  width: 280px;
+  margin-right: 90px;
 }
 
 .img3 {
-  padding-top: 150px;
-  width: 220px;
+  padding-top: 190px;
+  width: 280px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section3 h4 {
@@ -142,8 +146,7 @@
 }
 
 .section3-des {
-  position: absolute;
-  top: 350px;
+  margin-top: 25px;
 }
 
 /* section-4 */

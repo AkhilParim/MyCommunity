@@ -6,7 +6,7 @@ import { isEmail } from 'validator';
 
 
 const customerSchema = new mongoose.Schema({
-    _id: Number,
+    _id: Number,//checkING
     name: String,
     mobile: Number,
     email :{

@@ -148,7 +148,7 @@ margin: 33px 0 28px;;
   background-color: #fff;
   font-size: 1.1rem;
   position: absolute;
-  right: 300px;
+  right: 20%;
 }
 .edit-btn:hover, .close-btn:hover {
   cursor: pointer;

@@ -14,7 +14,7 @@
 
   <!-- CSS stylesheet -->
   <link rel="stylesheet" href="../CSS/about.css">
-  <link rel="stylesheet" href="../CSS//NavCartFooter.css">
+  <link rel="stylesheet" href="../CSS/NavCartFooter.css">
   <link rel="stylesheet" href="../CSS/orderpage.css">
 
   <!-- Google Fonts -->
@@ -30,141 +30,115 @@
   <!-- Javascript -->
   <script src="../JS/cart.js"></script>
 
-
-  <script type="text/javascript" language="javascript">
-    function showHide() {
-      var btn = document.getElementById("product");
-      var btn1 = document.getElementById("service");
-      var ele = document.getElementById("showHideDiv");
-      var ele1 = document.getElementById("showHideDiv1");
-      if (!("active" in btn.classList)) {
-        btn.classList.add("active-btn");
-      }
-      btn1.classList.remove("active-btn");
-      ele1.style.display = "none";
-      ele.style.display = "block";
-    }
-
-    function showHide1() {
-      var btn = document.getElementById("product");
-      var btn1 = document.getElementById("service");
-      var ele = document.getElementById("showHideDiv");
-      var ele1 = document.getElementById("showHideDiv1");
-      if (!("active" in btn1.classList)) {
-        btn1.classList.add("active-btn");
-      }
-      btn.classList.remove("active-btn");
-      ele.style.display = "none";
-      ele1.style.display = "block";
-    }
-  </script>
-
 </head>
+
 <body>
+  <!-- *******************  Cart  ******************* -->
+  <div id="mySidenav" class="sidenav">
+    <div class="cart-head">
+      <a class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <h2 class="cart-info">Your cart</h2>
+    </div>
+    <hr class="line-thick">
 
-    <!-- *******************  Cart  ******************* -->
-    <div id="mySidenav" class="sidenav">
-      <div class="cart-head">
-        <a class="closebtn" onclick="closeNav()"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
-        <h2 class="cart-info">Your cart</h2>
-      </div>
-      <hr class="line-thick">
-
-      <div class="cart-content">
-        <!-- Cart Item -->
-        <div class="cart-item">
-          <img src="../Images//sarees.jpg" alt="saree">
-          <div>
-            <h3>Silk saree</h3>
-            <h5>Rs. 900</h5>
-            <span class="remove-item">Remove</span>
-          </div>
-
-          <div>
-
-            <input type="number" class="quantity" name="quantity" min="1" value="1">
-
-          </div>
+    <div class="cart-content">
+      <!-- Cart Item -->
+      <div class="cart-item">
+        <img src="../Images//sarees.jpg" alt="saree">
+        <div>
+          <h3>Silk saree</h3>
+          <h5>Rs. 900</h5>
+          <span class="remove-item">Remove</span>
         </div>
 
+        <div>
 
+          <input type="number" class="quantity" name="quantity" min="1" value="1">
+
+        </div>
       </div>
-      <div class="cart-footer">
-        <h3>Your Total: Rs. <span class="cart-total">0</span></h3>
-        <button class="btn btn-info btn-lg cart-button">Checkout</button>
-      </div>
+
     </div>
-    <!-- *******************  Cart Close  ******************* -->
+    <div class="cart-footer">
+      <h3>Your Total: Rs. <span class="cart-total">0</span></h3>
+      <button class="btn btn-info btn-lg cart-button">Checkout</button>
+    </div>
+  </div>
+  <!-- *******************  Cart Close  ******************* -->
 
 
-    <!-- *******************  Sections  ******************* -->
+  <!-- *******************  Sections  ******************* -->
 
-    <div class="navigationbar">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="homepage.html">
+  <div class="navigationbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="homepage.html">
         <img src="../Images/logo.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="homepage.html">My Community</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <a class="navbar-brand" href="homepage.html">My Community</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="homepage.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="orderpage.html">Order</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="about_us.html">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="join_us.html">Join us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="myAccount.html">My Account</a>
-            </li>
-            <li class="nav-item">
-              <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orderpage.html">Order</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about_us.html">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="join_us.html">Join us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myAccount.html">My Account</a>
+          </li>
+          <li class="nav-item">
+            <i onclick="openNav()" class="fa fa-shopping-cart cart-btn" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--section1-->
+  <section class="section1">
+    <div class="container-fluid section1-container">
+      <h1> We Made this with lot of <i class="fa fa-heart" aria-hidden="true"></i></h1>
     </div>
+  </section>
+  <section class="section-2">
+    <div class="row sec">
+      <div class="col-md-7">
+        <h2 class="desc">We are a bunch of college students trying to solve some of the problems we see in our communities. </h2>
+      </div>
+      <div class="col-md-5">
+        <img class="street" src="../Images//empty_street_sfxm.svg" alt="">      
+      </div>
+    </div>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <div class="sec">
+      <h2>We thought of building this platform to encourage more creators to start their bussiness or expand current ones and make them leverage the power of internet.</h2>
+      <img src="../Images//business_shop.svg" alt="business_shop">
 
-    <!--section1-->
-    <section class="section1">
-        <div class="container-fluid section1-container">
-            <h1> We Made this with lot of <i class="fa fa-heart" aria-hidden="true"></i></h1>
-        </div>
-    </section>
-<section class="section-2">
-    <div class= "sec">
-    <h2 class="desc">We are a bunch of college students trying to solve some of the problems we see in our communities. </h2>
-    <img class="street" src="../Images//empty_street_sfxm.svg" alt="">
-</div>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<div class="sec">
-    <h2>We thought of building this platform to encourage more creators to start their bussiness or expand current ones and make them leverage the power of internet.</h2>
-    <img src="../Images//business_shop.svg" alt="business_shop">
+    </div>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <div class="sec">
+      <h2 id="bottom"> This is just a part of our complete project, we have much more in store for you. Keep watching this space.</h2>
+      <img src="../Images/mission.svg" alt="mission">
+    </div>
+  </section>
 
-</div>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<div class="sec">
-    <h2 id="bottom"> This is just a part of our complete project, we have much more in store for you. Keep watching this space.</h2>
-    <img src="../Images/mission.svg" alt="mission">
-</div>
-</section>
-
-<footer class="footer">
+  <footer class="footer">
     <div class="container-fluid footer-container">
       <div class="row">
         <div class="col-md-3 footer-left">
